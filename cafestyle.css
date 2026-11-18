@@ -1,0 +1,396 @@
+/* အခြေခံ Setting များ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F1EB; /* ပုံထဲကလို နို့နှစ်ရောင် နောက်ခံ */
+    color: #3E2723; /* အညိုရင့်ရောင် စာသား */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ခလုတ် (Button) ဒီဇိုင်းများ */
+.btn-brown {
+    background-color: #6F4E37;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-brown:hover {
+    background-color: #543B29;
+}
+
+.btn-small {
+    background-color: #6F4E37;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #F7F1EB;
+}
+
+.logo h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: block;
+    color: #795548;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #3E2723;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #8D6E63;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://i.pinimg.com/1200x/d1/c8/93/d1c89356cae6997d236a217bf65b79cb.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: center; /* အလယ်တည့်တည့်သို့ ပို့ရန် */
+    align-items: center;     /* အပေါ်အောက် အလယ်ညီရန် */
+    text-align: center;      /* စာသားများ အလယ်ညီရန် */
+    padding: 20px;
+}
+
+.hero-content {
+    background-color: rgba(247, 241, 235, 0.85); /* နို့နှစ်ရောင် အကြည့်စိမ့် */
+    padding: 40px 50px;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;      /* Box ထဲရှိ စာသားများ အလယ်ညီရန် */
+}
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content .desc {
+    font-size: 14px;
+    color: #5D4037;
+    margin-bottom: 25px;
+}
+
+/* Section များ အတွက် နေရာလွတ် */
+.section-padding {
+    padding: 60px 50px;
+}
+
+.bg-light {
+    background-color: #EFE6DD;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    font-size: 14px;
+    color: #6D5D53;
+}
+
+/* Why Choose Us Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* ဖုန်း Screen သေးရင် အောက်ဆင်းသွားစေရန် */
+}
+
+.card {
+    background-color: #EFE6DD;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #5D4037;
+}
+
+/* Menu Highlights */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #F7F1EB;
+    width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h4 {
+    font-size: 16px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #6F4E37;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.center-btn {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Visit Us Section */
+.visit-section {
+    padding: 60px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.visit-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.visit-text h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.visit-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #5D4037;
+}
+
+.visit-images {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    min-width: 300px;
+}
+
+.visit-images img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+    font-size: 14px;
+    color: #D7CCC8;
+    margin-bottom: 20px;
+}
+
+.dark-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #EFE6DD;
+}
+
+/* အဖြူရောင် ခလုတ် (Button) */
+.btn-white {
+    background-color: #FFFFFF;
+    color: #3E2723;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.btn-white:hover {
+    background-color: #F7F1EB;
+}
+
+/* ညာဘက် နို့နှစ်ရောင် အကွက် (Website နောက်ခံနဲ့ တွဲဖက်ညီစေရန်) */
+.light-box {
+    background-color: #EFE6DD; /* ပုံမှန်သုံးနေကျ နို့နှစ်ရောင် */
+    color: #3E2723;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.light-box .small-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #795548;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.light-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* Story & Opening Hours (အရောင် ပိုမို လိုက်ဖက်ညီစေရန် ပြင်ဆင်ထားသော CSS) */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.split-box {
+    flex: 1;
+    min-width: 320px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* ဘယ်ဘက် အကွက် (အရမ်းမမუქတော့ဘဲ နွေးထွေးတဲ့ ကော်ဖီညိုနုရောင်) */
+.dark-box {
+    background-color: #6F4E37; /* ပိုပြီး လှပတဲ့ ကော်ဖီညိုရောင် (Warm Coffee Brown) */
+    color: #FFFFFF;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dark-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.dark-box p {
+    font-size: 14px;
+    color: #F7F1EB;
+    margin-bottom: 20px;
+}
+
+.dark-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #EFE6DD;
+}
+
+/* အဖြူရောင် ခလုတ် (Button) */
+.btn-white {
+    background-color: #FFFFFF;
+    color: #6F4E37;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.btn-white:hover {
+    background-color: #F7F1EB;
+}
+
+/* ညာဘက် အကွက် (ဝဘ်ဆိုက်နောက်ခံနဲ့ တသားတည်းဖြစ်မယ့် Soft Cream အရောင်) */
+.light-box {
+    background-color: #E2D4C7; /* ပိုပြီး ထင်ရှားညက်ညောတဲ့ နို့နှစ်ရောင် */
+    color: #3E2723;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.light-box .small-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #6F4E37;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.light-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.light-box p {
+    font-size: 14px;
+    max-width: 380px;
+    margin-bottom: 20px;
+    color: #5D4037;
+}
